@@ -1,0 +1,76 @@
+.Home{
+   width: 100%;
+   background-color: #eee;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 50px;
+
+
+   .container{
+      width: 90%;
+     
+
+      nav{
+         padding-top: 20px;
+         align-items: center;
+         justify-content: space-between;
+         .heading{
+           align-items: center;
+           gap: 20px;
+  
+           ul{
+            align-items: center;
+            gap: 20px;
+           }
+         }
+
+         .search-box{
+            gap: 10px;
+            input{
+               width: 200px;
+               padding-inline: 10px;
+               padding-block: 8px;
+               border-radius: 5px;
+               border: 1px solid #1985f1;
+            }
+
+
+            button{
+             padding-inline: 13px;
+             padding-block: 8px;
+             border: none;
+             background-color: #1985f1;
+             border-radius: 5px;
+             color: white;
+
+             &:hover{
+               background-color: #087cef;
+               
+             }
+             &:active{
+                  background-color: #1985f1;
+             }
+            }
+         }
+      }
+
+      .news-feed{
+         margin-top: 25px;
+         padding-block: 30px;
+         justify-content: center;
+         gap: 50px;
+         flex-wrap: wrap;
+      
+      }
+   }
+
+   @media screen and (max-width:767px){
+     .container{ 
+      nav{
+      
+        flex-direction: column;
+        gap: 30px;
+      }
+     }   
+   }
+}

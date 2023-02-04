@@ -1,0 +1,53 @@
+.NewsCard{
+   background-color:#DDD0C8;
+   width: 230px;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   transition: all ease-in 0.3s;
+   
+   .container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap:5px;
+      padding-block:15px;
+      
+      
+
+      .image{
+         width:100%;
+
+         img{
+            width: 100%;
+         }
+      }
+
+      button{
+         padding-inline: 13px;
+            padding-block: 8px;
+            border: none;
+            background-color: #1985f1;
+            border-radius: 5px;
+            color: white;
+            margin-top: 10px;
+         
+            &:hover {
+               background-color: #087cef;
+         
+            }
+         
+            &:active {
+               background-color: #1985f1;
+            }
+      }
+   }
+
+       @media screen and (max-width:767px) {
+
+         width: 100%;
+       }
+
+       &:hover{
+         scale: (1.1);
+       }
+}
