@@ -1,19 +1,25 @@
 .NewsCard{
-   background-color:#DDD0C8;
+   background-color:#e8e8e8;
    width: 230px;
    border-radius: 10px;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    transition: all ease-in 0.3s;
+   cursor: pointer;
    
    .container{
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap:5px;
+      gap:10px;
       padding-block:15px;
       
-      
-
+      .desc{
+         font-size: 0.9rem;
+      }
+      .date{
+         font-size: 12px;
+         color: #808080;
+      }
       .image{
          width:100%;
 
@@ -30,6 +36,7 @@
             border-radius: 5px;
             color: white;
             margin-top: 10px;
+            cursor: pointer;
          
             &:hover {
                background-color: #087cef;

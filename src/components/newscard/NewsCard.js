@@ -1,22 +1,22 @@
 import React from "react";
 import "./NewsCard.scss";
-import dummyImg from "../download (1).jpeg";
+import moment from "moment";
 
-function NewsCard() {
+function NewsCard({ title, urlToImage, url, description, publishedAt, key }) {
+  const date = moment(publishedAt).utc().format("DD-MM-YYYY");
   return (
     <div className="NewsCard center">
       <div className="container">
         <div className="image">
-          <img src={dummyImg} alt="" />
+          <img src={urlToImage} alt="" />
         </div>
-        <h4>Aman</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Reprehenderit consectetur consequuntur laborum! Id illo magni nemo
-          maxime soluta praesentium consequuntur.
-        </p>
+        <h4>{title}</h4>
+        <p className="desc">{description}</p>
+        <p className="date">Publish at: {date}</p>
         <span>
-          <button>Read More...</button>
+          <button>
+            <a href={url}>Read More...</a>
+          </button>
         </span>
       </div>
     </div>

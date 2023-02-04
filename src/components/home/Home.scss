@@ -1,6 +1,6 @@
 .Home{
    width: 100%;
-   background-color: #eee;
+   background-color: #ededed;
    display: flex;
    justify-content: center;
    padding-bottom: 50px;
@@ -17,10 +17,32 @@
          .heading{
            align-items: center;
            gap: 20px;
+
+           .title{
+            font-size: 2.3rem;
+           }
   
            ul{
             align-items: center;
             gap: 20px;
+            cursor: pointer;
+
+            li{
+               color: black;
+               transition: all ease-in-out 0.2s;
+               
+
+               &:hover{
+                  color: rgb(27, 27, 27);
+                  scale: (1.1);
+               
+               }
+               &:active{
+                  scale: (1);
+                  color: black;
+               
+               }
+            }
            }
          }
 
@@ -42,13 +64,15 @@
              background-color: #1985f1;
              border-radius: 5px;
              color: white;
+             transition: all ease-in-out 0.2s;
 
              &:hover{
                background-color: #087cef;
-               
+               scale: (1.1);
              }
              &:active{
                   background-color: #1985f1;
+                  scale: (1);
              }
             }
          }
