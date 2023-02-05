@@ -37,16 +37,21 @@
             color: white;
             margin-top: 10px;
             cursor: pointer;
+            transition: all ease-in-out 0.3s;
          
             &:hover {
+               scale: (1.1);
                background-color: #087cef;
          
             }
          
             &:active {
+               scale: (1);
                background-color: #1985f1;
             }
       }
+
+      
    }
 
        @media screen and (max-width:767px) {

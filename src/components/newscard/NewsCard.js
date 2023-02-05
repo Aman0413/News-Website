@@ -14,9 +14,9 @@ function NewsCard({ title, urlToImage, url, description, publishedAt, key }) {
         <p className="desc">{description}</p>
         <p className="date">Publish at: {date}</p>
         <span>
-          <button>
-            <a href={url}>Read More...</a>
-          </button>
+          <a href={url}>
+            <button>Read More...</button>
+          </a>
         </span>
       </div>
     </div>
